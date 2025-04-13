@@ -1,0 +1,110 @@
+@font-face {
+	src: url("res/mono.woff2") format("woff2");
+	font-style: normal;
+	font-weight: 400;
+	font-family: "Ubuntu Mono";
+	font-stretch: 100%;
+	font-display: swap;
+	unicode-range: U+0000-007F;
+}
+
+@font-face {
+	src: url("res/ubuntu.woff2") format("woff2");
+	font-style: normal;
+	font-weight: 400;
+	font-family: "Ubuntu";
+	font-stretch: 100%;
+	font-display: swap;
+	unicode-range: U+0000-007F;
+}
+
+@keyframes gradientAnimation {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+	font-smooth: never;
+	-webkit-font-smoothing: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	transition: all 0.3s ease;
+}
+
+::selection {
+	color: #ffffff;
+	background: #004080;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #c0c0c0;
+	border-radius: 5px;
+	transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #b0b0b0;
+	transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:active {
+	background: #a0a0a0;
+	transition: background 0.3s ease;
+}
+
+body {
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 100%;
+	font-size: 14px;
+	font-style: normal;
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 500;
+	color: #303030;
+	overflow: hidden;
+	background: linear-gradient(-45deg, #1a1a1a, #2d2d2d, #1a1a1a, #2d2d2d);
+	background-size: 400% 400%;
+	animation: gradientAnimation 15s ease infinite;
+	accent-color: #004080;
+}
+
+input, select, option, textarea, button {
+	font-size: inherit;
+	font-style: inherit;
+	font-family: inherit;
+	font-weight: inherit;
+	font-stretch: inherit;
+	font-variant: inherit;
+	color: inherit;
+	background: rgba(0, 0, 0, 0);
+	box-sizing: content-box;
+}
+
+a {
+	color: unset;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+hr {
+	margin: 20px 0px;
+	border: none;
+	border-bottom: 1px solid #808080;
+}
+
+video {
+	background: #000000;
+}
